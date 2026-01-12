@@ -54,7 +54,7 @@ export function LoginFormLight() {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <div className="w-12 h-12 rounded-2xl bg-sage flex items-center justify-center">
-            <span className="text-xl font-bold text-primary-foreground">A</span>
+            <span className="text-xl font-bold text-primary-foreground">E</span>
           </div>
         </div>
         {/* Card */}

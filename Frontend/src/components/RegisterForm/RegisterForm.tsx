@@ -11,6 +11,7 @@ import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
@@ -21,6 +22,7 @@ export function RegisterFormLight() {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const navigate = useNavigate();
 
   const passwordStrength = {
     hasLength: password.length >= 8,
@@ -46,6 +48,7 @@ export function RegisterFormLight() {
 
       console.log(response.data);
       toast.success("Registration successful! Please log in.");
+      navigate("/auth/login");
     } catch (error) {
       console.log(error);
       toast.error("Registration failed. Please try again.");

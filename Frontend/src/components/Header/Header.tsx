@@ -69,11 +69,11 @@ export function Header() {
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-xl bg-sage flex items-center justify-center transition-transform duration-200 group-hover:scale-105">
               <span className="text-lg font-bold text-primary-foreground">
-                A
+                E
               </span>
             </div>
             <span className="text-lg font-semibold text-charcoal hidden sm:block">
-              Artisan
+              E-COMMERCE
             </span>
           </Link>
 

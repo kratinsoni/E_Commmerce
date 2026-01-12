@@ -173,13 +173,13 @@ export function UserOrdersDialog({
                   </div>
 
                   <div className="space-y-2">
-                    {order.orderItems.map((item, i) => (
+                    {order?.orderItems?.map((item, i) => (
                       <div key={i} className="flex justify-between text-sm">
                         <span>
-                          {item.product.name} × {item.quantity}
+                          {item?.product?.name} × {item?.quantity}
                         </span>
                         <span className="text-muted-foreground">
-                          ${item.priceAtPurchase * item.quantity}
+                          ${item?.priceAtPurchase * item?.quantity}
                         </span>
                       </div>
                     ))}
@@ -189,13 +189,13 @@ export function UserOrdersDialog({
 
                   <div className="flex justify-between items-center text-sm">
                     <span className="text-muted-foreground">
-                      {order.address}
+                      {order?.address}
                     </span>
-                    <span className="font-semibold">${order.orderPrice}</span>
+                    <span className="font-semibold">${order?.orderPrice}</span>
                   </div>
 
                   <p className="text-xs text-muted-foreground mt-2">
-                    {new Date(order.createdAt).toLocaleDateString()}
+                    {new Date(order?.createdAt).toLocaleDateString()}
                   </p>
                 </div>
               ))}
