@@ -64,7 +64,46 @@ The project supports **authentication, product management, cart, orders, and sec
 - Toast notifications
 - Loading states
 
----
+## 🚀 Getting Started
 
-## 📂 Project Structure
+Follow these instructions to get the project up and running on your local machine in a clean and beautiful manner.
 
+### 1. Fetch Repository
+
+First, clone the project to your local machine:
+
+```
+git clone <repository_url>
+cd <repository_name>
+```
+
+### 2. Environment Setup
+Set up your environment variables using the provided example.
+
+Locate example_env.txt.
+
+Create a .env file.
+
+Copy the contents of example_env.txt into .env and adjust values if necessary.
+
+### 3. Backend Setup
+Open a terminal and run the following commands to setup the server and database:
+
+
+```
+cd Backend
+npm i
+npm run seed
+npm run dev
+4. Frontend Setup
+Open a new terminal tab and run the following commands to launch the client:
+```
+
+### 4. Frontend Setup
+Open a new terminal tab and run the following commands to launch the client:
+
+```
+cd Frontend
+npm i
+npm run dev
+```
